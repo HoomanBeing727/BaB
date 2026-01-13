@@ -7,8 +7,8 @@ Python Version - at least 3.11
 
 1. Clone this repository
 git clone https://github.com/HoomanBeing727/BaB.git
-cd BaB/requirements
+cd BaB
 Run pip install -r requirements.txt
 
 **How to Run**
-Run python3 demo.py in BaB/requirements folder
+Run python3 demo.py  

@@ -4,6 +4,54 @@ from os.path import join
 import os
 
 # ============================================================================
+# SCREEN SCALER
+# ============================================================================
+
+class ScreenScaler:
+    """Handles responsive scaling for different screen sizes"""
+    
+    def __init__(self, screen_width, screen_height, reference_width=1920, reference_height=1080):
+        self.screen_width = screen_width
+        self.screen_height = screen_height
+        self.reference_width = reference_width
+        self.reference_height = reference_height
+        
+        self.width_scale = screen_width / reference_width
+        self.height_scale = screen_height / reference_height
+        self.uniform_scale = min(self.width_scale, self.height_scale)
+    
+    def scale_width(self, value, min_val=None, max_val=None):
+        """Scale a width value proportionally"""
+        scaled = int(value * self.width_scale)
+        if min_val is not None: 
+            scaled = max(scaled, min_val)
+        if max_val is not None: 
+            scaled = min(scaled, max_val)
+        return scaled
+    
+    def scale_height(self, value, min_val=None, max_val=None):
+        """Scale a height value proportionally"""
+        scaled = int(value * self.height_scale)
+        if min_val is not None: 
+            scaled = max(scaled, min_val)
+        if max_val is not None: 
+            scaled = min(scaled, max_val)
+        return scaled
+    
+    def scale_uniform(self, value, min_val=None, max_val=None):
+        """Scale maintaining aspect ratio (uses minimum of width/height scale)"""
+        scaled = int(value * self.uniform_scale)
+        if min_val is not None: 
+            scaled = max(scaled, min_val)
+        if max_val is not None: 
+            scaled = min(scaled, max_val)
+        return scaled
+    
+    def scale_font(self, size, min_size=16):
+        """Scale font size with readability minimum"""
+        return max(int(size * self.uniform_scale), min_size)
+
+# ============================================================================
 # SCOREBOARD DISPLAY
 # ============================================================================
 
@@ -19,14 +67,14 @@ def load_scores():
         return []
 
 
-def draw_scoreboard_table(screen, scores, start_rank, end_rank, font, title_font):
+def draw_scoreboard_table(screen, scores, start_rank, end_rank, font, title_font, scaler, window_width, window_height):
     """Draw scoreboard table for specified rank range"""
     screen.fill((245, 245, 245))  # Light gray background
         
     # Title
     title_text = "TOP SCORES LEADERBOARD"
     title_surface = title_font.render(title_text, True, (50, 50, 50))
-    title_rect = title_surface.get_rect(center=(WINDOW_WIDTH // 2, 60))
+    title_rect = title_surface.get_rect(center=(window_width // 2, scaler.scale_height(60, min_val=40)))
     screen.blit(title_surface, title_rect)
     
     # Subtitle (which ranks)
@@ -36,17 +84,17 @@ def draw_scoreboard_table(screen, scores, start_rank, end_rank, font, title_font
         subtitle = f"Ranks {start_rank}-{end_rank}"
     
     subtitle_surface = font.render(subtitle, True, (80, 80, 80))
-    subtitle_rect = subtitle_surface.get_rect(center=(WINDOW_WIDTH // 2, 120))
+    subtitle_rect = subtitle_surface.get_rect(center=(window_width // 2, scaler.scale_height(120, min_val=80)))
     screen.blit(subtitle_surface, subtitle_rect)
     
     # Table headers
-    header_y = 180
-    header_font = pygame.font.Font(None, 32)
+    header_y = scaler.scale_height(180, min_val=120)
+    header_font = pygame.font.Font(None, scaler.scale_font(32, min_size=20))
     
-    col_rank_x = 150
-    col_name_x = 300
-    col_score_x = 750
-    col_build_x = 1100
+    col_rank_x = scaler.scale_width(150, min_val=80)
+    col_name_x = scaler.scale_width(300, min_val=150)
+    col_score_x = scaler.scale_width(750, min_val=400)
+    col_build_x = scaler.scale_width(1100, min_val=600)
     
     headers = [
         ("Rank", col_rank_x),
@@ -60,12 +108,12 @@ def draw_scoreboard_table(screen, scores, start_rank, end_rank, font, title_font
         screen.blit(header_text, (x, header_y))
     
     # Draw header underline
-    pygame.draw.line(screen, (100, 100, 100), (100, header_y + 40), (WINDOW_WIDTH - 100, header_y + 40), 2)
+    pygame.draw.line(screen, (100, 100, 100), (scaler.scale_width(100, min_val=50), header_y + scaler.scale_height(40, min_val=30)), (window_width - scaler.scale_width(100, min_val=50), header_y + scaler.scale_height(40, min_val=30)), 2)
     
     # Draw scores
-    row_height = 75
-    row_start_y = header_y + 60
-    row_font = pygame.font.Font(None, 28)
+    row_height = scaler.scale_height(75, min_val=50)
+    row_start_y = header_y + scaler.scale_height(60, min_val=45)
+    row_font = pygame.font.Font(None, scaler.scale_font(28, min_size=18))
     
     # Get scores for this screen
     displayed_scores = scores[start_rank-1:end_rank]
@@ -76,7 +124,7 @@ def draw_scoreboard_table(screen, scores, start_rank, end_rank, font, title_font
         
         # Alternate row colors
         if idx % 2 == 0:
-            row_rect = pygame.Rect(100, row_y - 10, WINDOW_WIDTH - 200, row_height - 5)
+            row_rect = pygame.Rect(scaler.scale_width(100, min_val=50), row_y - scaler.scale_height(10, min_val=5), window_width - scaler.scale_width(200, min_val=100), row_height - scaler.scale_height(5, min_val=3))
             pygame.draw.rect(screen, (255, 255, 255), row_rect)
         
         # Rank
@@ -109,21 +157,21 @@ def draw_scoreboard_table(screen, scores, start_rank, end_rank, font, title_font
         size = size_map.get(small_promoter)
         
         build_str = f"Life Gene: {lives}      Speed Gene: {speed}      Small Gene: {size}"
-        build_text = pygame.font.Font(None, 24).render(build_str, True, (80, 80, 80))
+        build_text = pygame.font.Font(None, scaler.scale_font(24, min_size=16)).render(build_str, True, (80, 80, 80))
         screen.blit(build_text, (col_build_x, row_y + 2))
     
     # If no scores
     if len(displayed_scores) == 0:
         no_scores_text = font.render("No scores yet. Play to set a high score!", True, (100, 100, 100))
-        no_scores_rect = no_scores_text.get_rect(center=(WINDOW_WIDTH // 2, WINDOW_HEIGHT // 2))
+        no_scores_rect = no_scores_text.get_rect(center=(window_width // 2, window_height // 2))
         screen.blit(no_scores_text, no_scores_rect)
     
     # Footer
-    footer_text = pygame.font.Font(None, 24).render(
+    footer_text = pygame.font.Font(None, scaler.scale_font(24, min_size=16)).render(
         "Play the game to compete for the top spot!", 
         True, (120, 120, 120)
     )
-    footer_rect = footer_text.get_rect(center=(WINDOW_WIDTH // 2, WINDOW_HEIGHT - 50))
+    footer_rect = footer_text.get_rect(center=(window_width // 2, window_height - scaler.scale_height(50, min_val=30)))
     screen.blit(footer_text, footer_rect)
 
 
@@ -132,21 +180,22 @@ def create_scoreboard():
     pygame.init()
     screen = pygame.display.set_mode((0,0), pygame.FULLSCREEN)
     screen_size = pygame.display.get_window_size()
-    global WINDOW_WIDTH
-    global WINDOW_HEIGHT
     WINDOW_WIDTH = screen_size[0]
     WINDOW_HEIGHT = screen_size[1]
+    
+    # Create the screen scaler
+    scaler = ScreenScaler(WINDOW_WIDTH, WINDOW_HEIGHT, reference_width=1920, reference_height=1080)
 
     pygame.display.set_caption("Scoreboard - Build-a-Bacteria")
     clock = pygame.time.Clock()
     
-    # Fonts
+    # Fonts - now scaled
     try:
-        title_font = pygame.font.Font(join('images', 'Oxanium-Bold.ttf'), 56)
-        font = pygame.font.Font(join('images', 'Oxanium-Bold.ttf'), 36)
+        title_font = pygame.font.Font(join('images', 'Oxanium-Bold.ttf'), scaler.scale_font(56, min_size=32))
+        font = pygame.font.Font(join('images', 'Oxanium-Bold.ttf'), scaler.scale_font(36, min_size=22))
     except:
-        title_font = pygame.font.Font(None, 56)
-        font = pygame.font.Font(None, 36)
+        title_font = pygame.font.Font(None, scaler.scale_font(56, min_size=32))
+        font = pygame.font.Font(None, scaler.scale_font(36, min_size=22))
     
     # Track file modification time
     last_modified = 0
@@ -186,15 +235,15 @@ def create_scoreboard():
         # Draw current screen
         if current_screen == 0:
             # Ranks 1-10
-            draw_scoreboard_table(screen, scores, 1, 10, font, title_font)
+            draw_scoreboard_table(screen, scores, 1, 10, font, title_font, scaler, WINDOW_WIDTH, WINDOW_HEIGHT)
         else:
             # Ranks 11-20
-            draw_scoreboard_table(screen, scores, 11, 20, font, title_font)
+            draw_scoreboard_table(screen, scores, 11, 20, font, title_font, scaler, WINDOW_WIDTH, WINDOW_HEIGHT)
         
         # Draw screen indicator dots at bottom
-        dot_y = WINDOW_HEIGHT - 80
-        dot_spacing = 20
-        dot_radius = 8
+        dot_y = WINDOW_HEIGHT - scaler.scale_height(80, min_val=50)
+        dot_spacing = scaler.scale_width(20, min_val=15)
+        dot_radius = scaler.scale_uniform(8, min_val=5)
         
         for i in range(2):
             dot_x = WINDOW_WIDTH // 2 - dot_spacing // 2 + i * dot_spacing
@@ -205,8 +254,8 @@ def create_scoreboard():
         
         time_remaining = int(screen_switch_interval - screen_timer)
         timer_text = str(time_remaining)
-        timer_surf = pygame.font.Font(None, 24).render(timer_text, True, (120, 120, 120))
-        timer_rect = timer_surf.get_rect(center = (dot_x + 40, dot_y))
+        timer_surf = pygame.font.Font(None, scaler.scale_font(24, min_size=16)).render(timer_text, True, (120, 120, 120))
+        timer_rect = timer_surf.get_rect(center = (dot_x + scaler.scale_width(40, min_val=25), dot_y))
         screen.blit(timer_surf, timer_rect)
         
         pygame.display.flip()

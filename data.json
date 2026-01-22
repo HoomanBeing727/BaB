@@ -36,6 +36,3210 @@
     "timestamp": "2026-01-21T10:30:00"
   },
   {
+    "name": "  th",
+    "score": 2031,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "rough"
+      },
+      "color": {
+        "promoter_strength": "strong",
+        "circuit_type": "color",
+        "color_name": "blue"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "medium",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "strong",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "weak",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T10:51:36.359517"
+  },
+  {
+    "name": "  hana   ",
+    "score": 1496,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "rough"
+      },
+      "color": {
+        "promoter_strength": "strong",
+        "circuit_type": "color",
+        "color_name": "cyan"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "medium",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "weak",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "strong",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T10:59:31.620696"
+  },
+  {
+    "name": "Anonymous",
+    "score": 1465,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "medium",
+        "circuit_type": "shape",
+        "shape": "rod"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "rough"
+      },
+      "color": {
+        "promoter_strength": "strong",
+        "circuit_type": "color",
+        "color_name": "blue"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "strong",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "weak",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "medium",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T12:34:00.001935"
+  },
+  {
+    "name": " Luca mercer elvis",
+    "score": 1440,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "weak",
+        "circuit_type": "shape",
+        "shape": "rod"
+      },
+      "surface": {
+        "promoter_strength": "weak",
+        "circuit_type": "surface",
+        "surface": "smooth"
+      },
+      "color": {
+        "promoter_strength": "weak",
+        "circuit_type": "color",
+        "color_name": "yellow"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "medium",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "weak",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "strong",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T10:37:57.548781"
+  },
+  {
+    "name": "  mandy",
+    "score": 1381,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "smooth"
+      },
+      "color": {
+        "promoter_strength": "strong",
+        "circuit_type": "color",
+        "color_name": "blue"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "strong",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "weak",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "medium",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T10:42:29.810735"
+  },
+  {
+    "name": " carlos13",
+    "score": 1217,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "medium",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "medium",
+        "circuit_type": "surface",
+        "surface": "spiky"
+      },
+      "color": {
+        "promoter_strength": "medium",
+        "circuit_type": "color",
+        "color_name": "blue"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "medium",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "weak",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "strong",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T10:22:37.915632"
+  },
+  {
+    "name": " fddxd",
+    "score": 1215,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "spiky"
+      },
+      "color": {
+        "promoter_strength": "medium",
+        "circuit_type": "color",
+        "color_name": "blue"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "medium",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "strong",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "weak",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T11:10:01.568602"
+  },
+  {
+    "name": " wiki",
+    "score": 1138,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "medium",
+        "circuit_type": "shape",
+        "shape": "rod"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "rough"
+      },
+      "color": {
+        "promoter_strength": "strong",
+        "circuit_type": "color",
+        "color_name": "blue"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "strong",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "weak",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "medium",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T12:30:00.381721"
+  },
+  {
+    "name": " beefsteak",
+    "score": 993,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "spiky"
+      },
+      "color": {
+        "promoter_strength": "strong",
+        "circuit_type": "color",
+        "color_name": "cyan"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "strong",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "weak",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "medium",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T12:27:16.380521"
+  },
+  {
+    "name": "Aldous",
+    "score": 985,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "spiky"
+      },
+      "color": {
+        "promoter_strength": "strong",
+        "circuit_type": "color",
+        "color_name": "blue"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "medium",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "strong",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "weak",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T12:19:49.406295"
+  },
+  {
+    "name": "    cdhgdasiufyb",
+    "score": 961,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "spiky"
+      },
+      "color": {
+        "promoter_strength": "strong",
+        "circuit_type": "color",
+        "color_name": "blue"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "medium",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "weak",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "strong",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T10:34:10.851380"
+  },
+  {
+    "name": "luca",
+    "score": 805,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "spiky"
+      },
+      "color": {
+        "promoter_strength": "strong",
+        "circuit_type": "color",
+        "color_name": "blue"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "medium",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "strong",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "weak",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T10:29:15.849015"
+  },
+  {
+    "name": "c ",
+    "score": 791,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "spiky"
+      },
+      "color": {
+        "promoter_strength": "strong",
+        "circuit_type": "color",
+        "color_name": "blue"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "medium",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "weak",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "strong",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T10:32:23.521615"
+  },
+  {
+    "name": " emma",
+    "score": 782,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "rough"
+      },
+      "color": {
+        "promoter_strength": "strong",
+        "circuit_type": "color",
+        "color_name": "green"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "strong",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "medium",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "weak",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T11:29:17.253261"
+  },
+  {
+    "name": "jackie ",
+    "score": 724,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "rough"
+      },
+      "color": {
+        "promoter_strength": "strong",
+        "circuit_type": "color",
+        "color_name": "green"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "strong",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "medium",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "weak",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T11:31:07.609915"
+  },
+  {
+    "name": "Anonymous",
+    "score": 700,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "rough"
+      },
+      "color": {
+        "promoter_strength": "strong",
+        "circuit_type": "color",
+        "color_name": "green"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "weak",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "strong",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "medium",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T11:24:48.403864"
+  },
+  {
+    "name": "  anson",
+    "score": 690,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "spiky"
+      },
+      "color": {
+        "promoter_strength": "strong",
+        "circuit_type": "color",
+        "color_name": "green"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "strong",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "weak",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "medium",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T11:02:55.907345"
+  },
+  {
+    "name": "jason",
+    "score": 640,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "medium",
+        "circuit_type": "shape",
+        "shape": "rod"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "rough"
+      },
+      "color": {
+        "promoter_strength": "strong",
+        "circuit_type": "color",
+        "color_name": "blue"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "strong",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "weak",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "medium",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T12:31:18.763231"
+  },
+  {
+    "name": "Anonymous",
+    "score": 611,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "medium",
+        "circuit_type": "shape",
+        "shape": "rod"
+      },
+      "surface": {
+        "promoter_strength": "medium",
+        "circuit_type": "surface",
+        "surface": "rough"
+      },
+      "color": {
+        "promoter_strength": "medium",
+        "circuit_type": "color",
+        "color_name": "red"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "medium",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "strong",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "weak",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T11:42:17.791976"
+  },
+  {
+    "name": "Daisy",
+    "score": 610,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "medium",
+        "circuit_type": "shape",
+        "shape": "rod"
+      },
+      "surface": {
+        "promoter_strength": "medium",
+        "circuit_type": "surface",
+        "surface": "rough"
+      },
+      "color": {
+        "promoter_strength": "medium",
+        "circuit_type": "color",
+        "color_name": "blue"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "medium",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "strong",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "weak",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T11:44:26.983039"
+  },
+  {
+    "name": "mercer",
+    "score": 605,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "spiky"
+      },
+      "color": {
+        "promoter_strength": "strong",
+        "circuit_type": "color",
+        "color_name": "blue"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "strong",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "medium",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "weak",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T10:30:34.136962"
+  },
+  {
+    "name": "8",
+    "score": 564,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "spiky"
+      },
+      "color": {
+        "promoter_strength": "weak",
+        "circuit_type": "color",
+        "color_name": "green"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "medium",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "weak",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "strong",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T11:07:04.174740"
+  },
+  {
+    "name": "  ashley",
+    "score": 541,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "medium",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "medium",
+        "circuit_type": "surface",
+        "surface": "spiky"
+      },
+      "color": {
+        "promoter_strength": "medium",
+        "circuit_type": "color",
+        "color_name": "blue"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "medium",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "weak",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "strong",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T10:20:12.647447"
+  },
+  {
+    "name": "Anonymous",
+    "score": 502,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "rough"
+      },
+      "color": {
+        "promoter_strength": "strong",
+        "circuit_type": "color",
+        "color_name": "green"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "strong",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "medium",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "weak",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T11:16:45.750018"
+  },
+  {
+    "name": "Anonymous",
+    "score": 426,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "rough"
+      },
+      "color": {
+        "promoter_strength": "strong",
+        "circuit_type": "color",
+        "color_name": "green"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "weak",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "strong",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "medium",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T11:23:22.189164"
+  },
+  {
+    "name": "Anonymous",
+    "score": 420,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "rod"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "smooth"
+      },
+      "color": {
+        "promoter_strength": "strong",
+        "circuit_type": "color",
+        "color_name": "blue"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "medium",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "weak",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "strong",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T11:54:55.213455"
+  },
+  {
+    "name": "jasper",
+    "score": 418,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "rough"
+      },
+      "color": {
+        "promoter_strength": "strong",
+        "circuit_type": "color",
+        "color_name": "green"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "strong",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "medium",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "weak",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T11:32:10.902913"
+  },
+  {
+    "name": "Cynewulf",
+    "score": 402,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "spiky"
+      },
+      "color": {
+        "promoter_strength": "strong",
+        "circuit_type": "color",
+        "color_name": "blue"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "medium",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "strong",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "weak",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T12:17:41.283922"
+  },
+  {
+    "name": " anson",
+    "score": 399,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "medium",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "rough"
+      },
+      "color": {
+        "promoter_strength": "medium",
+        "circuit_type": "color",
+        "color_name": "red"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "weak",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "strong",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "medium",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T10:17:29.680739"
+  },
+  {
+    "name": "francis",
+    "score": 377,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "rough"
+      },
+      "color": {
+        "promoter_strength": "strong",
+        "circuit_type": "color",
+        "color_name": "green"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "strong",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "medium",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "weak",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T11:34:41.168738"
+  },
+  {
+    "name": "  ELVISLEECHAI",
+    "score": 373,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "spiky"
+      },
+      "color": {
+        "promoter_strength": "strong",
+        "circuit_type": "color",
+        "color_name": "blue"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "strong",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "medium",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "weak",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T10:26:36.181201"
+  },
+  {
+    "name": "Anonymous",
+    "score": 348,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "rough"
+      },
+      "color": {
+        "promoter_strength": "strong",
+        "circuit_type": "color",
+        "color_name": "green"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "weak",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "strong",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "medium",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T11:20:24.393337"
+  },
+  {
+    "name": "Anonymous",
+    "score": 334,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "spiky"
+      },
+      "color": {
+        "promoter_strength": "strong",
+        "circuit_type": "color",
+        "color_name": "blue"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "strong",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "medium",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "weak",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T12:16:39.283502"
+  },
+  {
+    "name": "wa",
+    "score": 308,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "rough"
+      },
+      "color": {
+        "promoter_strength": "strong",
+        "circuit_type": "color",
+        "color_name": "yellow"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "medium",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "weak",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "strong",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T10:55:21.517187"
+  },
+  {
+    "name": "Noob",
+    "score": 307,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "rough"
+      },
+      "color": {
+        "promoter_strength": "strong",
+        "circuit_type": "color",
+        "color_name": "blue"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "weak",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "strong",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "medium",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T11:27:04.073998"
+  },
+  {
+    "name": "  Jayden",
+    "score": 282,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "rough"
+      },
+      "color": {
+        "promoter_strength": "strong",
+        "circuit_type": "color",
+        "color_name": "blue"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "strong",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "medium",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "weak",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T10:45:56.905264"
+  },
+  {
+    "name": "     ",
+    "score": 276,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "spiky"
+      },
+      "color": {
+        "promoter_strength": "strong",
+        "circuit_type": "color",
+        "color_name": "green"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "strong",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "weak",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "medium",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T11:01:28.563016"
+  },
+  {
+    "name": " ai",
+    "score": 241,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "spiky"
+      },
+      "color": {
+        "promoter_strength": "strong",
+        "circuit_type": "color",
+        "color_name": "yellow"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "weak",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "medium",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "strong",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T12:14:19.314764"
+  },
+  {
+    "name": "Anonymous",
+    "score": 233,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "spiky"
+      },
+      "color": {
+        "promoter_strength": "strong",
+        "circuit_type": "color",
+        "color_name": "blue"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "strong",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "medium",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "weak",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T12:15:53.871035"
+  },
+  {
+    "name": "carlos",
+    "score": 224,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "medium",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "spiky"
+      },
+      "color": {
+        "promoter_strength": "medium",
+        "circuit_type": "color",
+        "color_name": "blue"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "weak",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "strong",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "medium",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T10:18:37.102989"
+  },
+  {
+    "name": "rey",
+    "score": 209,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "rough"
+      },
+      "color": {
+        "promoter_strength": "strong",
+        "circuit_type": "color",
+        "color_name": "green"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "strong",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "medium",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "weak",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T11:32:59.247846"
+  },
+  {
+    "name": "heydennnnnnnnnnnnn!!",
+    "score": 191,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "rough"
+      },
+      "color": {
+        "promoter_strength": "strong",
+        "circuit_type": "color",
+        "color_name": "blue"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "medium",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "strong",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "weak",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T10:47:50.115593"
+  },
+  {
+    "name": " ",
+    "score": 190,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "rough"
+      },
+      "color": {
+        "promoter_strength": "strong",
+        "circuit_type": "color",
+        "color_name": "green"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "strong",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "medium",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "weak",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T11:18:12.116191"
+  },
+  {
+    "name": "heyian",
+    "score": 187,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "rough"
+      },
+      "color": {
+        "promoter_strength": "strong",
+        "circuit_type": "color",
+        "color_name": "green"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "weak",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "strong",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "medium",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T11:20:57.407147"
+  },
+  {
+    "name": "Anonymous",
+    "score": 159,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "rough"
+      },
+      "color": {
+        "promoter_strength": "strong",
+        "circuit_type": "color",
+        "color_name": "blue"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "strong",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "medium",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "weak",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T11:38:32.532219"
+  },
+  {
+    "name": "aaaaa",
+    "score": 147,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "rough"
+      },
+      "color": {
+        "promoter_strength": "strong",
+        "circuit_type": "color",
+        "color_name": "cyan"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "medium",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "weak",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "strong",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T10:56:44.753940"
+  },
+  {
+    "name": "Anonymous",
+    "score": 132,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "spiky"
+      },
+      "color": {
+        "promoter_strength": "strong",
+        "circuit_type": "color",
+        "color_name": "blue"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "weak",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "medium",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "strong",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T12:02:25.434796"
+  },
+  {
+    "name": " ",
+    "score": 127,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "spiky"
+      },
+      "color": {
+        "promoter_strength": "strong",
+        "circuit_type": "color",
+        "color_name": "yellow"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "medium",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "strong",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "weak",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T12:00:03.710986"
+  },
+  {
+    "name": "Anonymous",
+    "score": 126,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "medium",
+        "circuit_type": "shape",
+        "shape": "rod"
+      },
+      "surface": {
+        "promoter_strength": "medium",
+        "circuit_type": "surface",
+        "surface": "rough"
+      },
+      "color": {
+        "promoter_strength": "medium",
+        "circuit_type": "color",
+        "color_name": "red"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "medium",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "strong",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "weak",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T11:42:56.661711"
+  },
+  {
+    "name": " lshdl",
+    "score": 125,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "spiky"
+      },
+      "color": {
+        "promoter_strength": "medium",
+        "circuit_type": "color",
+        "color_name": "green"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "weak",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "strong",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "medium",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T11:12:46.528059"
+  },
+  {
+    "name": "Anonymous",
+    "score": 125,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "rough"
+      },
+      "color": {
+        "promoter_strength": "strong",
+        "circuit_type": "color",
+        "color_name": "green"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "weak",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "strong",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "medium",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T11:21:57.520002"
+  },
+  {
+    "name": "Anonymous",
+    "score": 120,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "spiky"
+      },
+      "color": {
+        "promoter_strength": "strong",
+        "circuit_type": "color",
+        "color_name": "blue"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "strong",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "medium",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "weak",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T12:02:01.297343"
+  },
+  {
+    "name": "Anonymous",
+    "score": 119,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "medium",
+        "circuit_type": "surface",
+        "surface": "spiky"
+      },
+      "color": {
+        "promoter_strength": "medium",
+        "circuit_type": "color",
+        "color_name": "yellow"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "strong",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "weak",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "medium",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T11:51:59.195753"
+  },
+  {
+    "name": "Anonymous",
+    "score": 116,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "rough"
+      },
+      "color": {
+        "promoter_strength": "strong",
+        "circuit_type": "color",
+        "color_name": "green"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "strong",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "medium",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "weak",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T11:35:05.765819"
+  },
+  {
+    "name": "m",
+    "score": 113,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "rough"
+      },
+      "color": {
+        "promoter_strength": "medium",
+        "circuit_type": "color",
+        "color_name": "blue"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "strong",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "medium",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "weak",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T11:37:53.836239"
+  },
+  {
+    "name": "Anonymous",
+    "score": 103,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "rod"
+      },
+      "surface": {
+        "promoter_strength": "medium",
+        "circuit_type": "surface",
+        "surface": "rough"
+      },
+      "color": {
+        "promoter_strength": "medium",
+        "circuit_type": "color",
+        "color_name": "red"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "weak",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "strong",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "medium",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T11:50:38.235232"
+  },
+  {
+    "name": "iuhjy",
+    "score": 102,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "spiky"
+      },
+      "color": {
+        "promoter_strength": "strong",
+        "circuit_type": "color",
+        "color_name": "blue"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "strong",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "weak",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "medium",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T12:21:14.775384"
+  },
+  {
+    "name": "knh",
+    "score": 96,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "spiky"
+      },
+      "color": {
+        "promoter_strength": "strong",
+        "circuit_type": "color",
+        "color_name": "green"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "weak",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "medium",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "strong",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T11:58:04.004631"
+  },
+  {
+    "name": "  ",
+    "score": 95,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "spiky"
+      },
+      "color": {
+        "promoter_strength": "weak",
+        "circuit_type": "color",
+        "color_name": "green"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "strong",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "medium",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "weak",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T11:05:37.798447"
+  },
+  {
+    "name": " joan",
+    "score": 93,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "rough"
+      },
+      "color": {
+        "promoter_strength": "strong",
+        "circuit_type": "color",
+        "color_name": "red"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "medium",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "strong",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "weak",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T10:53:55.755241"
+  },
+  {
+    "name": " ",
+    "score": 92,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "rough"
+      },
+      "color": {
+        "promoter_strength": "strong",
+        "circuit_type": "color",
+        "color_name": "green"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "weak",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "strong",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "medium",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T11:22:31.804751"
+  },
+  {
+    "name": "   c",
+    "score": 92,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "spiky"
+      },
+      "color": {
+        "promoter_strength": "strong",
+        "circuit_type": "color",
+        "color_name": "yellow"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "medium",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "strong",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "weak",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T11:59:02.747711"
+  },
+  {
+    "name": "v",
+    "score": 88,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "rough"
+      },
+      "color": {
+        "promoter_strength": "strong",
+        "circuit_type": "color",
+        "color_name": "green"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "strong",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "medium",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "weak",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T11:33:24.856589"
+  },
+  {
+    "name": "  ",
+    "score": 79,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "spiky"
+      },
+      "color": {
+        "promoter_strength": "medium",
+        "circuit_type": "color",
+        "color_name": "blue"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "medium",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "strong",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "weak",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T11:10:39.864156"
+  },
+  {
+    "name": "Anonymous",
+    "score": 76,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "medium",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "rough"
+      },
+      "color": {
+        "promoter_strength": "medium",
+        "circuit_type": "color",
+        "color_name": "red"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "weak",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "strong",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "medium",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T10:16:40.990205"
+  },
+  {
+    "name": "Anonymous",
+    "score": 73,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "spiky"
+      },
+      "color": {
+        "promoter_strength": "strong",
+        "circuit_type": "color",
+        "color_name": "yellow"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "weak",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "medium",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "strong",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T12:15:08.775662"
+  },
+  {
+    "name": "Anonymous",
+    "score": 72,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "spiky"
+      },
+      "color": {
+        "promoter_strength": "strong",
+        "circuit_type": "color",
+        "color_name": "yellow"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "medium",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "strong",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "weak",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T11:59:44.755558"
+  },
+  {
+    "name": "  gtf ",
+    "score": 71,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "rough"
+      },
+      "color": {
+        "promoter_strength": "strong",
+        "circuit_type": "color",
+        "color_name": "green"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "weak",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "strong",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "medium",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T11:25:20.822874"
+  },
+  {
+    "name": "Anonymous",
+    "score": 71,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "rod"
+      },
+      "surface": {
+        "promoter_strength": "medium",
+        "circuit_type": "surface",
+        "surface": "rough"
+      },
+      "color": {
+        "promoter_strength": "medium",
+        "circuit_type": "color",
+        "color_name": "red"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "weak",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "strong",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "medium",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T11:50:10.368762"
+  },
+  {
+    "name": "Anonymous",
+    "score": 68,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "spiky"
+      },
+      "color": {
+        "promoter_strength": "medium",
+        "circuit_type": "color",
+        "color_name": "blue"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "medium",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "strong",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "weak",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T11:10:59.476619"
+  },
+  {
+    "name": "  jojw ",
+    "score": 66,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "spiky"
+      },
+      "color": {
+        "promoter_strength": "strong",
+        "circuit_type": "color",
+        "color_name": "green"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "weak",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "strong",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "medium",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T11:00:43.999961"
+  },
+  {
+    "name": "hjk",
+    "score": 65,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "spiky"
+      },
+      "color": {
+        "promoter_strength": "strong",
+        "circuit_type": "color",
+        "color_name": "blue"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "strong",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "medium",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "weak",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T12:01:38.588822"
+  },
+  {
+    "name": "Anonymous",
+    "score": 64,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "medium",
+        "circuit_type": "shape",
+        "shape": "rod"
+      },
+      "surface": {
+        "promoter_strength": "medium",
+        "circuit_type": "surface",
+        "surface": "rough"
+      },
+      "color": {
+        "promoter_strength": "medium",
+        "circuit_type": "color",
+        "color_name": "red"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "medium",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "strong",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "weak",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T11:40:57.329320"
+  },
+  {
+    "name": "      fjdnfozds",
+    "score": 55,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "spiky"
+      },
+      "color": {
+        "promoter_strength": "medium",
+        "circuit_type": "color",
+        "color_name": "green"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "weak",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "strong",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "medium",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T11:13:06.545346"
+  },
+  {
+    "name": "Anonymous",
+    "score": 55,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "spiky"
+      },
+      "color": {
+        "promoter_strength": "strong",
+        "circuit_type": "color",
+        "color_name": "yellow"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "medium",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "strong",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "weak",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T12:00:21.722544"
+  },
+  {
+    "name": "Anonymous",
+    "score": 53,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "spiky"
+      },
+      "color": {
+        "promoter_strength": "strong",
+        "circuit_type": "color",
+        "color_name": "blue"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "weak",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "medium",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "strong",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T12:04:24.650220"
+  },
+  {
+    "name": "Anonymous",
+    "score": 48,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "spiky"
+      },
+      "color": {
+        "promoter_strength": "medium",
+        "circuit_type": "color",
+        "color_name": "green"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "weak",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "strong",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "medium",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T11:12:14.226465"
+  },
+  {
+    "name": " exfdffd",
+    "score": 43,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "rough"
+      },
+      "color": {
+        "promoter_strength": "strong",
+        "circuit_type": "color",
+        "color_name": "yellow"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "weak",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "strong",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "medium",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T11:26:02.833373"
+  },
+  {
+    "name": "Anonymous",
+    "score": 41,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "rough"
+      },
+      "color": {
+        "promoter_strength": "strong",
+        "circuit_type": "color",
+        "color_name": "green"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "weak",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "strong",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "medium",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T11:19:44.187275"
+  },
+  {
+    "name": "   jigyug",
+    "score": 40,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "rough"
+      },
+      "color": {
+        "promoter_strength": "strong",
+        "circuit_type": "color",
+        "color_name": "blue"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "weak",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "strong",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "medium",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T11:27:24.882625"
+  },
+  {
+    "name": "jiuuhuguhg",
+    "score": 38,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "spiky"
+      },
+      "color": {
+        "promoter_strength": "strong",
+        "circuit_type": "color",
+        "color_name": "blue"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "weak",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "medium",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "strong",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T12:03:02.224866"
+  },
+  {
+    "name": "Anonymous",
+    "score": 32,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "rough"
+      },
+      "color": {
+        "promoter_strength": "strong",
+        "circuit_type": "color",
+        "color_name": "green"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "weak",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "strong",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "medium",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T11:19:33.577036"
+  },
+  {
+    "name": "Anonymous",
+    "score": 32,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "spiky"
+      },
+      "color": {
+        "promoter_strength": "strong",
+        "circuit_type": "color",
+        "color_name": "blue"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "weak",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "medium",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "strong",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T12:02:46.999250"
+  },
+  {
+    "name": "Anonymous",
+    "score": 31,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "rough"
+      },
+      "color": {
+        "promoter_strength": "strong",
+        "circuit_type": "color",
+        "color_name": "green"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "weak",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "strong",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "medium",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T11:21:32.033284"
+  },
+  {
+    "name": "Anonymous",
+    "score": 29,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "spiky"
+      },
+      "color": {
+        "promoter_strength": "strong",
+        "circuit_type": "color",
+        "color_name": "blue"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "weak",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "medium",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "strong",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T12:04:00.389793"
+  },
+  {
+    "name": "kj",
+    "score": 28,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "spiky"
+      },
+      "color": {
+        "promoter_strength": "strong",
+        "circuit_type": "color",
+        "color_name": "blue"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "medium",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "strong",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "weak",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T10:27:44.462421"
+  },
+  {
+    "name": "   ",
+    "score": 27,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "spiky"
+      },
+      "color": {
+        "promoter_strength": "strong",
+        "circuit_type": "color",
+        "color_name": "blue"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "weak",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "strong",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "medium",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T12:24:33.815352"
+  },
+  {
+    "name": " anson",
+    "score": 26,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "spiky"
+      },
+      "color": {
+        "promoter_strength": "strong",
+        "circuit_type": "color",
+        "color_name": "green"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "weak",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "strong",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "medium",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T11:00:28.820825"
+  },
+  {
+    "name": "r",
+    "score": 26,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "rough"
+      },
+      "color": {
+        "promoter_strength": "strong",
+        "circuit_type": "color",
+        "color_name": "green"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "weak",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "strong",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "medium",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T11:18:57.258020"
+  },
+  {
     "name": "Billy",
     "score": 24,
     "visual_circuits": {
@@ -70,5 +3274,221 @@
       }
     },
     "timestamp": "2026-01-22T09:28:43.681262"
+  },
+  {
+    "name": "w",
+    "score": 22,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "medium",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "rough"
+      },
+      "color": {
+        "promoter_strength": "medium",
+        "circuit_type": "color",
+        "color_name": "red"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "weak",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "strong",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "medium",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T10:16:22.955465"
+  },
+  {
+    "name": "Anonymous",
+    "score": 21,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "spiky"
+      },
+      "color": {
+        "promoter_strength": "strong",
+        "circuit_type": "color",
+        "color_name": "blue"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "weak",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "medium",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "strong",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T12:03:23.938650"
+  },
+  {
+    "name": "miles",
+    "score": 20,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "spiky"
+      },
+      "color": {
+        "promoter_strength": "strong",
+        "circuit_type": "color",
+        "color_name": "blue"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "weak",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "strong",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "medium",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T12:22:23.369505"
+  },
+  {
+    "name": "Anonymous",
+    "score": 18,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "spiky"
+      },
+      "color": {
+        "promoter_strength": "medium",
+        "circuit_type": "color",
+        "color_name": "green"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "weak",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "strong",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "medium",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T11:12:00.992138"
+  },
+  {
+    "name": "Anonymous",
+    "score": 14,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "spiky"
+      },
+      "color": {
+        "promoter_strength": "strong",
+        "circuit_type": "color",
+        "color_name": "blue"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "weak",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "medium",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "strong",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T12:03:12.345086"
+  },
+  {
+    "name": "Anonymous",
+    "score": 14,
+    "visual_circuits": {
+      "shape": {
+        "promoter_strength": "strong",
+        "circuit_type": "shape",
+        "shape": "spherical"
+      },
+      "surface": {
+        "promoter_strength": "strong",
+        "circuit_type": "surface",
+        "surface": "spiky"
+      },
+      "color": {
+        "promoter_strength": "strong",
+        "circuit_type": "color",
+        "color_name": "blue"
+      }
+    },
+    "gameplay_circuits": {
+      "life": {
+        "promoter_strength": "weak",
+        "circuit_type": "life"
+      },
+      "speed": {
+        "promoter_strength": "strong",
+        "circuit_type": "speed"
+      },
+      "small": {
+        "promoter_strength": "medium",
+        "circuit_type": "small"
+      }
+    },
+    "timestamp": "2026-01-22T12:22:43.832777"
   }
 ]

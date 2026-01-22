@@ -13,6 +13,54 @@ GAMEOVER = 2
 THANKYOU = 3
 
 
+# ============================================================================
+# SCREEN SCALER
+# ============================================================================
+
+class ScreenScaler:
+    """Handles responsive scaling for different screen sizes"""
+    
+    def __init__(self, screen_width, screen_height, reference_width=1920, reference_height=1080):
+        self.screen_width = screen_width
+        self.screen_height = screen_height
+        self.reference_width = reference_width
+        self.reference_height = reference_height
+        
+        self.width_scale = screen_width / reference_width
+        self.height_scale = screen_height / reference_height
+        self.uniform_scale = min(self.width_scale, self.height_scale)
+    
+    def scale_width(self, value, min_val=None, max_val=None):
+        """Scale a width value proportionally"""
+        scaled = int(value * self.width_scale)
+        if min_val is not None: 
+            scaled = max(scaled, min_val)
+        if max_val is not None: 
+            scaled = min(scaled, max_val)
+        return scaled
+    
+    def scale_height(self, value, min_val=None, max_val=None):
+        """Scale a height value proportionally"""
+        scaled = int(value * self.height_scale)
+        if min_val is not None: 
+            scaled = max(scaled, min_val)
+        if max_val is not None: 
+            scaled = min(scaled, max_val)
+        return scaled
+    
+    def scale_uniform(self, value, min_val=None, max_val=None):
+        """Scale maintaining aspect ratio (uses minimum of width/height scale)"""
+        scaled = int(value * self.uniform_scale)
+        if min_val is not None: 
+            scaled = max(scaled, min_val)
+        if max_val is not None: 
+            scaled = min(scaled, max_val)
+        return scaled
+    
+    def scale_font(self, size, min_size=16):
+        """Scale font size with readability minimum"""
+        return max(int(size * self.uniform_scale), min_size)
+
 
 # ============================================================================
 # UI COMPONENTS
@@ -46,7 +94,7 @@ class ArrowSelector:
                 'right': right_arrow
             }
     
-    def __init__(self, x, y, width, height, options, selected_index=0):
+    def __init__(self, x, y, width, height, options, selected_index=0, font_size=28):
         # Load arrow images if not already loaded
         ArrowSelector._load_arrow_images()
         
@@ -56,7 +104,7 @@ class ArrowSelector:
         self.height = height
         self.options = options
         self.selected_index = selected_index
-        self.font = pygame.font.Font(None, 28)
+        self.font = pygame.font.Font(None, font_size)
         
         # Arrow button size
         self.arrow_width = 40
@@ -127,7 +175,7 @@ class ArrowSelector:
 
 
 class Button:
-    def __init__(self, x, y, width, height, text, elevation):
+    def __init__(self, x, y, width, height, text, elevation, font_size=32):
         # core attributes 
         self.rect = pygame.Rect(x, y, width, height)
         self.elevation = elevation
@@ -148,7 +196,7 @@ class Button:
         self.bottom_color = 'gray'
     
         # text
-        self.font = pygame.font.Font(None, 32)
+        self.font = pygame.font.Font(None, font_size)
         self.text_surf = self.font.render(text, True, (255,255,255))
         self.text_rect = self.text_surf.get_frect(center = self.top_rect.center)
 
@@ -190,7 +238,7 @@ class Button:
 class ProgressBar:
     """Visual progress bar showing promoter strength with smooth animations"""
     
-    def __init__(self, x, y, width, height, fill_color=None):
+    def __init__(self, x, y, width, height, fill_color=None, font_size=20):
         self.x = x
         self.y = y
         self.width = width
@@ -198,7 +246,7 @@ class ProgressBar:
         self.value = 0.0  # Current displayed value (0.0 to 1.0)
         self.target_value = 0.0  # Target value to animate towards
         self.animation_speed = 0.15  # Speed of animation (0.1 = slower, 0.2 = faster)
-        self.font = pygame.font.Font(None, 20)
+        self.font = pygame.font.Font(None, font_size)
         
         # Colors
         self.bg_color = (220, 220, 220)
@@ -274,16 +322,17 @@ class HeartDisplay:
 class CircuitStatsDisplay:
     """Display showing expression levels for all six circuits below bacteria preview"""
     
-    def __init__(self, x, y, width, life_surf):
+    def __init__(self, x, y, width, life_surf, scaler):
         self.x = x
         self.y = y
         self.width = width
         self.life_surf = life_surf
+        self.scaler = scaler
         
-        # Fonts (smaller for 6 bars)
-        self.title_font = pygame.font.Font(None, 28)
-        self.label_font = pygame.font.Font(None, 25)
-        self.desc_font = pygame.font.Font(None, 20)
+        # Fonts (smaller for 6 bars) - now scaled
+        self.title_font = pygame.font.Font(None, scaler.scale_font(28, min_size=18))
+        self.label_font = pygame.font.Font(None, scaler.scale_font(25, min_size=16))
+        self.desc_font = pygame.font.Font(None, scaler.scale_font(20, min_size=14))
         
         # Colors for each circuit type
         self.shape_color = (70, 180, 130)      # Green
@@ -293,40 +342,40 @@ class CircuitStatsDisplay:
         self.speed_color = (50, 150, 200)      # Light blue
         self.small_color = (150, 100, 200)     # Purple
         
-        # Bar dimensions (smaller for 6 bars)
-        bar_width = width - 40
-        bar_height = 20
-        bar_spacing = 85
+        # Bar dimensions (smaller for 6 bars) - now scaled
+        bar_width = width - scaler.scale_width(40, min_val=20)
+        bar_height = scaler.scale_height(20, min_val=15)
+        bar_spacing = scaler.scale_height(85, min_val=60)
         
         # Create six progress bars
-        bar_x = x + 20
+        bar_x = x + scaler.scale_width(20, min_val=10)
         bar_y_start = y
         
         # Visual circuits
-        self.shape_bar = ProgressBar(bar_x, bar_y_start, bar_width, bar_height, self.shape_color)
-        self.shape_label_pos = (bar_x, bar_y_start - 22)
-        self.shape_desc_pos = (bar_x, bar_y_start + bar_height + 3)
+        self.shape_bar = ProgressBar(bar_x, bar_y_start, bar_width, bar_height, self.shape_color, scaler.scale_font(20, min_size=14))
+        self.shape_label_pos = (bar_x, bar_y_start - scaler.scale_height(22, min_val=16))
+        self.shape_desc_pos = (bar_x, bar_y_start + bar_height + scaler.scale_height(3, min_val=2))
         
-        self.surface_bar = ProgressBar(bar_x, bar_y_start + bar_spacing, bar_width, bar_height, self.surface_color)
-        self.surface_label_pos = (bar_x, bar_y_start + bar_spacing - 22)
-        self.surface_desc_pos = (bar_x, bar_y_start + bar_spacing + bar_height + 3)
+        self.surface_bar = ProgressBar(bar_x, bar_y_start + bar_spacing, bar_width, bar_height, self.surface_color, scaler.scale_font(20, min_size=14))
+        self.surface_label_pos = (bar_x, bar_y_start + bar_spacing - scaler.scale_height(22, min_val=16))
+        self.surface_desc_pos = (bar_x, bar_y_start + bar_spacing + bar_height + scaler.scale_height(3, min_val=2))
         
-        self.color_bar = ProgressBar(bar_x, bar_y_start + 2*bar_spacing, bar_width, bar_height, self.color_color)
-        self.color_label_pos = (bar_x, bar_y_start + 2*bar_spacing - 22)
-        self.color_desc_pos = (bar_x, bar_y_start + 2*bar_spacing + bar_height + 3)
+        self.color_bar = ProgressBar(bar_x, bar_y_start + 2*bar_spacing, bar_width, bar_height, self.color_color, scaler.scale_font(20, min_size=14))
+        self.color_label_pos = (bar_x, bar_y_start + 2*bar_spacing - scaler.scale_height(22, min_val=16))
+        self.color_desc_pos = (bar_x, bar_y_start + 2*bar_spacing + bar_height + scaler.scale_height(3, min_val=2))
         
         # Gameplay circuits
         self.life_display = HeartDisplay(bar_x, bar_y_start + 3*bar_spacing, bar_width, bar_height, life_surf)
-        self.life_label_pos = (bar_x, bar_y_start + 3*bar_spacing - 22)
-        self.life_desc_pos = (bar_x, bar_y_start + 3*bar_spacing + bar_height + 3)
+        self.life_label_pos = (bar_x, bar_y_start + 3*bar_spacing - scaler.scale_height(22, min_val=16))
+        self.life_desc_pos = (bar_x, bar_y_start + 3*bar_spacing + bar_height + scaler.scale_height(3, min_val=2))
         
-        self.speed_bar = ProgressBar(bar_x, bar_y_start + 4*bar_spacing, bar_width, bar_height, self.speed_color)
-        self.speed_label_pos = (bar_x, bar_y_start + 4*bar_spacing - 22)
-        self.speed_desc_pos = (bar_x, bar_y_start + 4*bar_spacing + bar_height + 3)
+        self.speed_bar = ProgressBar(bar_x, bar_y_start + 4*bar_spacing, bar_width, bar_height, self.speed_color, scaler.scale_font(20, min_size=14))
+        self.speed_label_pos = (bar_x, bar_y_start + 4*bar_spacing - scaler.scale_height(22, min_val=16))
+        self.speed_desc_pos = (bar_x, bar_y_start + 4*bar_spacing + bar_height + scaler.scale_height(3, min_val=2))
         
-        self.small_bar = ProgressBar(bar_x, bar_y_start + 5*bar_spacing, bar_width, bar_height, self.small_color)
-        self.small_label_pos = (bar_x, bar_y_start + 5*bar_spacing - 22)
-        self.small_desc_pos = (bar_x, bar_y_start + 5*bar_spacing + bar_height + 3)
+        self.small_bar = ProgressBar(bar_x, bar_y_start + 5*bar_spacing, bar_width, bar_height, self.small_color, scaler.scale_font(20, min_size=14))
+        self.small_label_pos = (bar_x, bar_y_start + 5*bar_spacing - scaler.scale_height(22, min_val=16))
+        self.small_desc_pos = (bar_x, bar_y_start + 5*bar_spacing + bar_height + scaler.scale_height(3, min_val=2))
         
         # Store current circuit info for descriptions
         self.shape_info = {'promoter': 'medium', 'trait': 'rod'}
@@ -337,7 +386,7 @@ class CircuitStatsDisplay:
         self.small_info = {'promoter': 'strong', 'size': 'small'}
         
         # Total height
-        self.height = bar_y_start + 5*bar_spacing + bar_height + 25
+        self.height = bar_y_start + 5*bar_spacing + bar_height + scaler.scale_height(25, min_val=15)
     
     def update(self, circuits):
         """Update progress bars based on current circuit selections"""
@@ -475,16 +524,17 @@ class CircuitStatsDisplay:
 class CircuitPanel:
     """Panel with horizontally arranged circuit components"""
     
-    def __init__(self, x, y, width, circuit_type):
+    def __init__(self, x, y, width, circuit_type, scaler):
         self.x = x
         self.y = y
         self.width = width
-        self.height = 110  # Back to original height without progress bar
+        self.height = scaler.scale_height(110, min_val=80)  # Scaled height
         self.circuit_type = circuit_type
+        self.scaler = scaler
         
-        # Fonts
-        self.title_font = pygame.font.Font(None, 34)
-        self.label_font = pygame.font.Font(None, 26)
+        # Fonts - now scaled
+        self.title_font = pygame.font.Font(None, scaler.scale_font(34, min_size=20))
+        self.label_font = pygame.font.Font(None, scaler.scale_font(26, min_size=18))
         
         # Colors
         self.title_color = (50, 50, 50)
@@ -492,39 +542,41 @@ class CircuitPanel:
         self.bg_color = (255, 255, 255)
         self.border_color = (180, 180, 180)
         
-        # Horizontal layout spacing
-        selector_width = 220
-        selector_height = 45
-        spacing = 45
-        label_width = 95
+        # Horizontal layout spacing - now scaled
+        selector_width = scaler.scale_width(220, min_val=150)
+        selector_height = scaler.scale_height(45, min_val=35)
+        spacing = scaler.scale_width(45, min_val=30)
+        label_width = scaler.scale_width(95, min_val=70)
         
         # Starting position for components (after title)
-        component_y = y + 50
-        current_x = x + 25
+        component_y = y + scaler.scale_height(50, min_val=40)
+        current_x = x + scaler.scale_width(25, min_val=15)
         
         # Promoter selector
         self.promoter_selector = ArrowSelector(
             current_x + label_width, component_y, selector_width, selector_height,
             ['weak', 'medium', 'strong'],
-            selected_index=1  # Default to 'medium'
+            selected_index=1,  # Default to 'medium'
+            font_size=scaler.scale_font(28, min_size=18)
         )
-        self.promoter_label_pos = (current_x, component_y + 10)
+        self.promoter_label_pos = (current_x, component_y + scaler.scale_height(10, min_val=8))
         
         # Move to next position
         current_x += label_width + selector_width + spacing
         
         # CDS selector
         self.cds_selector = self._create_cds_selector(current_x + label_width, component_y, selector_width, selector_height)
-        self.cds_label_pos = (current_x, component_y + 10)
+        self.cds_label_pos = (current_x, component_y + scaler.scale_height(10, min_val=8))
     
     def _create_cds_selector(self, x, y, width, height):
         """Create CDS selector based on circuit type"""
+        font_size = self.scaler.scale_font(28, min_size=18)
         if self.circuit_type == 'shape':
-            return ArrowSelector(x, y, width, height, ['rod', 'spherical'], selected_index=0)
+            return ArrowSelector(x, y, width, height, ['rod', 'spherical'], selected_index=0, font_size=font_size)
         elif self.circuit_type == 'surface':
-            return ArrowSelector(x, y, width, height, ['smooth', 'rough', 'spiky'], selected_index=0)
+            return ArrowSelector(x, y, width, height, ['smooth', 'rough', 'spiky'], selected_index=0, font_size=font_size)
         elif self.circuit_type == 'color':
-            return ArrowSelector(x, y, width, height, ['cyan', 'green', 'yellow', 'red', 'blue'], selected_index=1)
+            return ArrowSelector(x, y, width, height, ['cyan', 'green', 'yellow', 'red', 'blue'], selected_index=1, font_size=font_size)
         else:
             raise ValueError(f"Unknown circuit type: {self.circuit_type}")
     
@@ -581,20 +633,21 @@ class CircuitPanel:
 class GameplayCircuitPanel:
     """Panel for gameplay circuits with radio button promoter selection and swap logic"""
     
-    def __init__(self, x, y, width, circuit_type, promoter_assignments):
+    def __init__(self, x, y, width, circuit_type, promoter_assignments, scaler):
         self.x = x
         self.y = y
         self.width = width
-        self.height = 110
+        self.height = scaler.scale_height(110, min_val=80)
         self.circuit_type = circuit_type  # 'life', 'speed', or 'small'
+        self.scaler = scaler
         
         # Reference to shared promoter assignments dict
         # Format: {'weak': 'life', 'medium': 'speed', 'strong': 'small'}
         self.promoter_assignments = promoter_assignments
         
-        # Fonts
-        self.title_font = pygame.font.Font(None, 34)
-        self.label_font = pygame.font.Font(None, 24)
+        # Fonts - now scaled
+        self.title_font = pygame.font.Font(None, scaler.scale_font(34, min_size=20))
+        self.label_font = pygame.font.Font(None, scaler.scale_font(24, min_size=16))
         
         # Colors
         self.title_color = (50, 50, 50)
@@ -604,11 +657,11 @@ class GameplayCircuitPanel:
         self.button_inactive_color = (200, 200, 200)
         self.button_text_color = (50, 50, 50)
         
-        # Radio button layout (3 buttons horizontally)
-        button_width = 90
-        button_height = 40
-        button_spacing = 20
-        buttons_y = y + 55
+        # Radio button layout (3 buttons horizontally) - now scaled
+        button_width = scaler.scale_width(90, min_val=60)
+        button_height = scaler.scale_height(40, min_val=30)
+        button_spacing = scaler.scale_width(20, min_val=10)
+        buttons_y = y + scaler.scale_height(55, min_val=45)
         
         # Calculate starting x to center the three buttons
         total_buttons_width = 3 * button_width + 2 * button_spacing
@@ -1111,12 +1164,12 @@ class ConfirmationMessage:
 class TextInput:
     """Text input component for name entry"""
     
-    def __init__(self, x, y, width, height, max_length=20):
+    def __init__(self, x, y, width, height, max_length=20, font_size=36):
         self.rect = pygame.Rect(x, y, width, height)
         self.text = ""
         self.max_length = max_length
         self.active = True
-        self.font = pygame.font.Font(None, 36)
+        self.font = pygame.font.Font(None, font_size)
         self.cursor_visible = True
         self.cursor_timer = 0
         self.cursor_interval = 500  # Blink every 500ms
@@ -1174,12 +1227,13 @@ class TextInput:
 class Player(pygame.sprite.Sprite):
     """Player controlled bacteria sprite with gameplay stats"""
     
-    def __init__(self, groups, circuits):
+    def __init__(self, groups, circuits, scaler):
         super().__init__(groups)
         
         # Generate bacteria sprite from circuits
         self.circuits = circuits
-        self.base_size = 80  # Base bacteria size
+        self.scaler = scaler
+        self.base_size = scaler.scale_uniform(80, min_val=50)  # Scaled base bacteria size
         
         # Get gameplay stats from circuits
         strength_map = {'weak': 0.3, 'medium': 0.7, 'strong': 1.0}
@@ -1413,16 +1467,16 @@ class Powerup(pygame.sprite.Sprite):
 # HELPER FUNCTIONS
 # ============================================================================
 
-def draw_title(screen, text, x, y):
+def draw_title(screen, text, x, y, scaler):
     """Draw main title"""
-    font = pygame.font.Font(None, 48)
+    font = pygame.font.Font(None, scaler.scale_font(48, min_size=28))
     text_surface = font.render(text, True, (40, 40, 40))
     screen.blit(text_surface, (x, y))
 
 
-def draw_section_title(screen, text, x, y):
+def draw_section_title(screen, text, x, y, scaler):
     """Draw section title"""
-    font = pygame.font.Font(None, 40)
+    font = pygame.font.Font(None, scaler.scale_font(40, min_size=24))
     text_surface = font.render(text, True, (60, 60, 60))
     screen.blit(text_surface, (x, y))
 
@@ -1451,24 +1505,27 @@ def create_customisation():
     WINDOW_WIDTH = screen_size[0]
     WINDOW_HEIGHT = screen_size[1]
     
-    # Layout for 6 circuits vertically stacked
+    # Create the screen scaler with detected resolution
+    scaler = ScreenScaler(WINDOW_WIDTH, WINDOW_HEIGHT, reference_width=1920, reference_height=1080)
+    
+    # Layout for 6 circuits vertically stacked - now using scaler
     left_panel_width = WINDOW_WIDTH // 2
-    right_panel_x = left_panel_width + 50
-    panel_x = 50
-    panel_width = left_panel_width - 100
-    panel_spacing = 150  # Reduced to fit 6 circuits
-    starting_y = 100
+    right_panel_x = left_panel_width + scaler.scale_width(50, min_val=30)
+    panel_x = scaler.scale_width(50, min_val=30)
+    panel_width = left_panel_width - scaler.scale_width(100, min_val=60)
+    panel_spacing = scaler.scale_height(120, min_val=100)  # Reduced to fit 6 circuits
+    starting_y = scaler.scale_height(100, min_val=60)
     
     # Visual circuit panels
-    shape_panel = CircuitPanel(panel_x, starting_y, panel_width, 'shape')
-    surface_panel = CircuitPanel(panel_x, starting_y + panel_spacing, panel_width, 'surface')
-    color_panel = CircuitPanel(panel_x, starting_y + 2*panel_spacing, panel_width, 'color')
+    shape_panel = CircuitPanel(panel_x, starting_y, panel_width, 'shape', scaler)
+    surface_panel = CircuitPanel(panel_x, starting_y + panel_spacing, panel_width, 'surface', scaler)
+    color_panel = CircuitPanel(panel_x, starting_y + 2*panel_spacing, panel_width, 'color', scaler)
     
     # Gameplay circuit panels with shared promoter assignments
     promoter_assignments = {'weak': 'life', 'medium': 'speed', 'strong': 'small'}
-    life_panel = GameplayCircuitPanel(panel_x, starting_y + 3*panel_spacing, panel_width, 'life', promoter_assignments)
-    speed_panel = GameplayCircuitPanel(panel_x, starting_y + 4*panel_spacing, panel_width, 'speed', promoter_assignments)
-    small_panel = GameplayCircuitPanel(panel_x, starting_y + 5*panel_spacing, panel_width, 'small', promoter_assignments)
+    life_panel = GameplayCircuitPanel(panel_x, starting_y + 3*panel_spacing, panel_width, 'life', promoter_assignments, scaler)
+    speed_panel = GameplayCircuitPanel(panel_x, starting_y + 4*panel_spacing, panel_width, 'speed', promoter_assignments, scaler)
+    small_panel = GameplayCircuitPanel(panel_x, starting_y + 5*panel_spacing, panel_width, 'small', promoter_assignments, scaler)
     
     # Build initial circuits
     circuits = {
@@ -1480,13 +1537,15 @@ def create_customisation():
         'small': small_panel.build_circuit()
     }
     
-    # Play button (was "Build your Bacteria!")
-    play_button = Button(panel_x, starting_y + 6*panel_spacing + 20, panel_width, 60, "Build the Bacteria!", 6)
+    # Play button (was "Build your Bacteria!") - now scaled
+    play_button = Button(panel_x, starting_y + 6*panel_spacing + scaler.scale_height(20, min_val=10), 
+                        panel_width, scaler.scale_height(60, min_val=45), "Build the Bacteria!", 
+                        scaler.scale_height(6, min_val=4), font_size=scaler.scale_font(32, min_size=20))
     
-    # Preview and stats (smaller to fit with 6 circuits stats)
-    preview_size = 230
-    preview_x = right_panel_x + (WINDOW_WIDTH / 2 - preview_size) // 2 - 50
-    preview_y = 150
+    # Preview and stats (smaller to fit with 6 circuits stats) - now scaled
+    preview_size = scaler.scale_uniform(230, min_val=150)
+    preview_x = right_panel_x + (WINDOW_WIDTH / 2 - preview_size) // 2 - scaler.scale_width(50, min_val=30)
+    preview_y = scaler.scale_height(150, min_val=80)
     
     bacteria_preview = BacteriaPreviewSprite(preview_x, preview_y, preview_size)
     bacteria_preview.update(circuits)
@@ -1494,10 +1553,10 @@ def create_customisation():
     # Load heart image for life display (needed by CircuitStatsDisplay)
     life_surf = pygame.image.load(join('images', 'heart.png')).convert_alpha()
     
-    stats_width = 400
-    stats_x = right_panel_x + (WINDOW_WIDTH // 2 - stats_width) // 2 - 50
-    stats_y = preview_y + preview_size + 50
-    circuit_stats = CircuitStatsDisplay(stats_x, stats_y, stats_width, life_surf)
+    stats_width = scaler.scale_width(400, min_val=300)
+    stats_x = right_panel_x + (WINDOW_WIDTH // 2 - stats_width) // 2 - scaler.scale_width(50, min_val=30)
+    stats_y = preview_y + preview_size + scaler.scale_height(50, min_val=30)
+    circuit_stats = CircuitStatsDisplay(stats_x, stats_y, stats_width, life_surf, scaler)
     circuit_stats.update(circuits)
     
     # ========================================================================
@@ -1509,8 +1568,8 @@ def create_customisation():
     bacteria2_surf = pygame.image.load(join('images', 'bacteria2.png')).convert_alpha()
     bacteria3_surf = pygame.image.load(join('images', 'bacteria3.png')).convert_alpha()
     laser_surf = pygame.image.load(join('images', 'laser.png')).convert_alpha()
-    game_font = pygame.font.Font(join('images', 'Oxanium-Bold.ttf'), 40)
-    lives_font = pygame.font.Font(join('images', 'Oxanium-Bold.ttf'), 32)
+    game_font = pygame.font.Font(join('images', 'Oxanium-Bold.ttf'), scaler.scale_font(40, min_size=24))
+    lives_font = pygame.font.Font(join('images', 'Oxanium-Bold.ttf'), scaler.scale_font(32, min_size=20))
     
     # Powerup assets
     speedup_surf = pygame.image.load(join('images', 'speedup.png')).convert_alpha()
@@ -1613,7 +1672,7 @@ def create_customisation():
                     powerup_sprites = pygame.sprite.Group()
                     
                     # Create player with circuits
-                    player = Player(all_sprites, circuits)
+                    player = Player(all_sprites, circuits, scaler)
                     
                     # Setup enemy spawn event
                     obstacle_event = pygame.event.custom_type()
@@ -1739,7 +1798,7 @@ def create_customisation():
         elif current_state == GAME:
             current_score = (pygame.time.get_ticks() - game_start_time) // 100
             if current_score == 200 and current_stage == 1: 
-                # Start powerup spawning every 15 seconds
+                # Start powerup spawning every 10 seconds
                 pygame.time.set_timer(powerup_event, 10000)  
             
             # handle stages (using == to ensure transitions only happen once)
@@ -1766,7 +1825,7 @@ def create_customisation():
             # Handle shooting
             recent_keys = pygame.key.get_just_pressed()
             if recent_keys[pygame.K_SPACE] and player.can_shoot:
-                laser_scale = 35
+                laser_scale = scaler.scale_uniform(35, min_val=20)
                 transformed_laser = pygame.transform.scale(laser_surf, (laser_scale, laser_scale))
                 Laser(transformed_laser, player.rect.midtop, (all_sprites, laser_sprites))
                 player.can_shoot = False
@@ -1801,7 +1860,13 @@ def create_customisation():
                     pygame.time.set_timer(powerup_event, 0)
                     
                     # Create text input
-                    text_input = TextInput(WINDOW_WIDTH // 2 - 200, WINDOW_HEIGHT // 2 + 150, 400, 50)
+                    text_input = TextInput(
+                        WINDOW_WIDTH // 2 - scaler.scale_width(200, min_val=150), 
+                        WINDOW_HEIGHT // 2 + scaler.scale_height(150, min_val=100), 
+                        scaler.scale_width(400, min_val=300), 
+                        scaler.scale_height(50, min_val=40),
+                        font_size=scaler.scale_font(36, min_size=24)
+                    )
                     gameover_timer = pygame.time.get_ticks()
                     
             
@@ -1836,11 +1901,11 @@ def create_customisation():
             
             # Separator line
             pygame.draw.line(screen, (180, 180, 180), 
-                           (left_panel_width, 80), 
-                           (left_panel_width, WINDOW_HEIGHT - 50), 3)
+                           (left_panel_width, scaler.scale_height(80, min_val=50)), 
+                           (left_panel_width, WINDOW_HEIGHT - scaler.scale_height(50, min_val=30)), 3)
             
             # Title
-            draw_title(screen, "Build-a-Bacteria Game", 50, 30)
+            draw_title(screen, "Build-a-Bacteria Game", scaler.scale_width(50, min_val=30), scaler.scale_height(30, min_val=20), scaler)
             
             # Left panels (all 6 circuits)
             shape_panel.draw(screen)
@@ -1852,12 +1917,12 @@ def create_customisation():
             play_button.draw(screen)
             
             # Right panel
-            draw_section_title(screen, "Live Preview", right_panel_x + 50, 90)
+            draw_section_title(screen, "Live Preview", right_panel_x + scaler.scale_width(50, min_val=30), scaler.scale_height(90, min_val=60), scaler)
             bacteria_preview.draw(screen)
             circuit_stats.draw(screen)
         
         elif current_state == GAME:
-            screen.fill('#F3E5AB')
+            screen.fill('#e1d18c')
             
             # Draw score
             score_text = game_font.render(str(current_score), True, 'Black')
@@ -1875,16 +1940,16 @@ def create_customisation():
                 screen.blit(timefreeze_overlay, (0, 0))
             
             # Draw lives (bacteria icons)
-            lives_x = 50
-            lives_y = 40
+            lives_x = scaler.scale_width(50, min_val=30)
+            lives_y = scaler.scale_height(40, min_val=25)
             lives_label = lives_font.render("Lives:", True, 'black')
             screen.blit(lives_label, (lives_x, lives_y))
             
             # Draw hearts for life
             for i in range(player.lives):
-                life_scale = 50
+                life_scale = scaler.scale_uniform(50, min_val=30)
                 life_rect = pygame.transform.scale(life_surf, (life_scale, life_scale))
-                screen.blit(life_rect, (lives_x + 100 + i * 40, lives_y - 10))
+                screen.blit(life_rect, (lives_x + scaler.scale_width(100, min_val=70) + i * scaler.scale_width(40, min_val=30), lives_y - scaler.scale_height(10, min_val=5)))
             
             # Flash player if invincible
             if player.invincible: 
@@ -1898,19 +1963,19 @@ def create_customisation():
             screen.fill((50, 50, 70))
             
             # Game Over text
-            title_font = pygame.font.Font(join('images', 'Oxanium-Bold.ttf'), 72) if 'Oxanium' in str(game_font) else pygame.font.Font(None, 72)
+            title_font = pygame.font.Font(join('images', 'Oxanium-Bold.ttf'), scaler.scale_font(72, min_size=36)) if 'Oxanium' in str(game_font) else pygame.font.Font(None, scaler.scale_font(72, min_size=36))
             gameover_text = title_font.render("GAME OVER", True, (255, 100, 100))
-            gameover_rect = gameover_text.get_rect(center=(WINDOW_WIDTH//2, 200))
+            gameover_rect = gameover_text.get_rect(center=(WINDOW_WIDTH//2, scaler.scale_height(200, min_val=100)))
             screen.blit(gameover_text, gameover_rect)
             
             # Final score
             score_text = game_font.render(f"Final Score: {final_score}", True, (255, 255, 255))
-            score_rect = score_text.get_rect(center=(WINDOW_WIDTH//2, 300))
+            score_rect = score_text.get_rect(center=(WINDOW_WIDTH//2, scaler.scale_height(300, min_val=150)))
             screen.blit(score_text, score_rect)
             
             # Circuit summary
-            summary_font = pygame.font.Font(None, 28)
-            y_offset = 380
+            summary_font = pygame.font.Font(None, scaler.scale_font(28, min_size=18))
+            y_offset = scaler.scale_height(380, min_val=200)
             
             summary_lines = [
                 "Your Bacteria Build:",
@@ -1922,24 +1987,24 @@ def create_customisation():
                 text = summary_font.render(line, True, (200, 200, 200))
                 text_rect = text.get_rect(center=(WINDOW_WIDTH//2, y_offset))
                 screen.blit(text, text_rect)
-                y_offset += 35
+                y_offset += scaler.scale_height(35, min_val=25)
             
             # Name input
             if text_input:
                 prompt_text = summary_font.render("Enter Your Name:", True, (255, 255, 255))
-                prompt_rect = prompt_text.get_rect(center=(WINDOW_WIDTH//2, WINDOW_HEIGHT//2 + 100))
+                prompt_rect = prompt_text.get_rect(center=(WINDOW_WIDTH//2, WINDOW_HEIGHT//2 + scaler.scale_height(100, min_val=70)))
                 screen.blit(prompt_text, prompt_rect)
                 
                 text_input.draw(screen)
                 
-                hint_text = pygame.font.Font(None, 20).render("Press ENTER to submit", True, (150, 150, 150))
-                hint_rect = hint_text.get_rect(center=(WINDOW_WIDTH//2, WINDOW_HEIGHT//2 + 220))
+                hint_text = pygame.font.Font(None, scaler.scale_font(20, min_size=14)).render("Press ENTER to submit", True, (150, 150, 150))
+                hint_rect = hint_text.get_rect(center=(WINDOW_WIDTH//2, WINDOW_HEIGHT//2 + scaler.scale_height(220, min_val=150)))
                 screen.blit(hint_text, hint_rect)
         
         elif current_state == THANKYOU:
             screen.fill((70, 120, 80))
             
-            thank_font = pygame.font.Font(join('images', 'Oxanium-Bold.ttf'), 60) if 'Oxanium' in str(game_font) else pygame.font.Font(None, 60)
+            thank_font = pygame.font.Font(join('images', 'Oxanium-Bold.ttf'), scaler.scale_font(60, min_size=32)) if 'Oxanium' in str(game_font) else pygame.font.Font(None, scaler.scale_font(60, min_size=32))
             thank_text = thank_font.render("Thank you for playing!", True, (255, 255, 255))
             thank_rect = thank_text.get_rect(center=(WINDOW_WIDTH//2, WINDOW_HEIGHT//2))
             screen.blit(thank_text, thank_rect)

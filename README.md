@@ -14,6 +14,6 @@ Run pip install -r requirements.txt
 Run python3 demo.py    
 
 **How to Play**  
-Move around using WASD   
+Move around using arrow keys 
 Spacebar allows you to shoot acid and defend yourself from enemies   
 Try to beat the Highscore!   

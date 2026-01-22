@@ -10,10 +10,10 @@ git clone https://github.com/HoomanBeing727/BaB.git
 cd BaB
 Run pip install -r requirements.txt
 
-**How to Run**
-Run python3 demo.py  
+**How to Run**   
+Run python3 demo.py    
 
 **How to Play**  
-Move around using WASD 
-Spacebar allows you to shoot acid and defend yourself from enemies
-Try to beat the Highscore!
+Move around using WASD   
+Spacebar allows you to shoot acid and defend yourself from enemies   
+Try to beat the Highscore!   

@@ -61,7 +61,7 @@ class Terminator(Part):
 class CodingSequence(Part, ABC):
     """Abstract base for all coding sequences"""
     
-    def __init__(self, category: Literal['shape', 'surface', 'color']):
+    def __init__(self, category: Literal['shape', 'surface', 'color', 'life', 'speed', 'small']):
         self.category = category
     
     @abstractmethod
@@ -128,6 +128,75 @@ class ColorCDS(CodingSequence):
         return f"Color CDS (Color: {self.color_name} - {self.color_hex})"
 
 
+class LifeCDS(CodingSequence):
+    """Coding sequence that affects player lives in gameplay"""
+    
+    def __init__(self):
+        super().__init__('life')
+    
+    def apply_effect(self, bacteria: 'Bacteria', expression_level: float) -> None:
+        # Lives are determined by promoter strength, not CDS
+        pass
+    
+    def get_lives_from_expression(self, expression_level: float) -> int:
+        """Convert expression level to number of lives"""
+        if expression_level <= 0.3:  # weak
+            return 1
+        elif expression_level <= 0.7:  # medium
+            return 2
+        else:  # strong
+            return 3
+    
+    def get_info(self) -> str:
+        return "Life CDS (Affects player lives)"
+
+
+class SpeedCDS(CodingSequence):
+    """Coding sequence that affects player movement speed"""
+    
+    def __init__(self):
+        super().__init__('speed')
+    
+    def apply_effect(self, bacteria: 'Bacteria', expression_level: float) -> None:
+        # Speed is determined by promoter strength, not CDS
+        pass
+    
+    def get_speed_multiplier(self, expression_level: float) -> float:
+        """Convert expression level to speed multiplier"""
+        if expression_level <= 0.3:  # weak
+            return 0.7
+        elif expression_level <= 0.7:  # medium
+            return 1.0
+        else:  # strong
+            return 1.3
+    
+    def get_info(self) -> str:
+        return "Speed CDS (Affects player speed)"
+
+
+class SmallCDS(CodingSequence):
+    """Coding sequence that affects player size/hitbox"""
+    
+    def __init__(self):
+        super().__init__('small')
+    
+    def apply_effect(self, bacteria: 'Bacteria', expression_level: float) -> None:
+        # Size is determined by promoter strength, not CDS
+        pass
+    
+    def get_size_multiplier(self, expression_level: float) -> float:
+        """Convert expression level to size multiplier"""
+        if expression_level <= 0.3:  # weak (bigger)
+            return 1.3
+        elif expression_level <= 0.7:  # medium
+            return 1.0
+        else:  # strong (smaller)
+            return 0.7
+    
+    def get_info(self) -> str:
+        return "Small CDS (Affects player size)"
+
+
 # ============================================================================
 # CIRCUIT CLASS
 # ============================================================================
@@ -138,9 +207,9 @@ class Circuit:
     def __init__(self, 
                  promoter: Promoter,
                  cds: CodingSequence,
-                 circuit_type: Literal['shape', 'surface', 'color']):
+                 circuit_type: Literal['shape', 'surface', 'color', 'life', 'speed', 'small']):
         
-        if circuit_type not in ['shape', 'surface', 'color']:
+        if circuit_type not in ['shape', 'surface', 'color', 'life', 'speed', 'small']:
             raise ValueError(f"Invalid circuit type: {circuit_type}")
         
         if cds.category != circuit_type:
@@ -175,6 +244,9 @@ class Circuit:
             result['surface'] = self.cds.surface
         elif self.circuit_type == 'color' and isinstance(self.cds, ColorCDS):
             result['color_name'] = self.cds.color_name
+        # Gameplay circuits don't have additional properties
+        elif self.circuit_type in ['life', 'speed', 'small']:
+            pass  # Only promoter_strength matters
         
         return result
     
@@ -201,6 +273,12 @@ class Circuit:
             cds = SurfaceCDS(data['surface'])
         elif circuit_type == 'color':
             cds = ColorCDS(data['color_name'])
+        elif circuit_type == 'life':
+            cds = LifeCDS()
+        elif circuit_type == 'speed':
+            cds = SpeedCDS()
+        elif circuit_type == 'small':
+            cds = SmallCDS()
         else:
             raise ValueError(f"Unknown circuit type: {circuit_type}")
         

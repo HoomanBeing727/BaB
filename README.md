@@ -1,19 +1,36 @@
-**Synthetic Biology Educational Program**
+# Build a Bacteria
 
-A game aimed to teach about the basics of Synthetic Biology. It acts as a visual support in teaching basic genetic engineering concepts to young students (Middle School or Younger), such as how changing a promoter or coding sequence can affect the appearance of a bacteria or have tradeoffs. This was quickly developed as an interactive booth game as a favour for HKUST Steam Day in early 2025. It features two separate displays - the actual game and a scoreboard - to provide casual competitiveness and encourage student participation. 
+## Synthetic Biology Educational Program
 
-**Installation**
-Python Version - at least 3.11 
+**A synthetic biology educational game built with Pygame.**
 
-1. Clone this repository
+Developed as an interactive booth game for HKUST STEAM Day (early 2025).  
+Designed to teach primary and secondary school students the basics of genetic engineering—like how changing a promoter or coding sequence can alter a bacteria's appearance or introduce tradeoffs.
+
+<img width="400" height="250" alt="BaB_Demonstration" src="https://github.com/user-attachments/assets/fbcb21bb-b73e-4269-b10c-995a952eaae1" />
+
+## Features
+- **Two‑screen setup**: Main game on one display, live scoreboard on another for casual competition.
+- **Simple controls**: Arrow keys to move, spacebar to shoot acid at enemies.
+- **Score challenge**: Encourages replay, competitveness and engagement among students.
+- **Educational core**: Visualises abstract genetic concepts in a fun, hands‑on way.
+  
+## Project Status
+Created as a rapid prototype for a three‑day outreach event and was moderately popular with nearly 500 plays. Not actively maintained. 
+
+## Installation
+```bash
 git clone https://github.com/HoomanBeing727/BaB.git
 cd BaB
-Run pip install -r requirements.txt
+pip install -r requirements.txt
+```
 
-**How to Run**   
-Run python3 demo.py    
+## How to Run
+```bash
+python3 demo.py
+```
 
-**How to Play**  
-Move around using arrow keys 
-Spacebar allows you to shoot acid and defend yourself from enemies   
-Try to beat the Highscore!   
+## How to Play
+- Move: arrow keys
+- Shoot acid: spacebar
+- Goal: survive and beat the highscore

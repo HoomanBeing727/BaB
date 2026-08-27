@@ -7,7 +7,7 @@
 Developed as an interactive booth game for HKUST STEAM Day (early 2025).  
 Designed to teach primary and secondary school students the basics of genetic engineering—like how changing a promoter or coding sequence can alter a bacteria's appearance or introduce tradeoffs.
 
-<img width="400" height="250" alt="BaB_Demonstration" src="https://github.com/user-attachments/assets/fbcb21bb-b73e-4269-b10c-995a952eaae1" />
+<img width="1200" height="750" alt="BaB_Demonstration" src="https://github.com/user-attachments/assets/fbcb21bb-b73e-4269-b10c-995a952eaae1" />
 
 ## Features
 - **Two‑screen setup**: Main game on one display, live scoreboard on another for casual competition.

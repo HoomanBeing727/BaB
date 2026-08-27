@@ -2,3 +2,6 @@ __pycache__/
 customisation_backup.py
 practicebutton.py
 settings.py
+venv/
+data.json
+
